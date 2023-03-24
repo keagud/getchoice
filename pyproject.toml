@@ -1,9 +1,9 @@
 [tool]
 [tool.poetry]
-name = "selector"
+name = "getchoice"
 version = "0.1.0"
-homepage = "https://github.com/keagud/selector"
-description = "Top-level package for selector."
+description = "Simple, extensible user selection interface for CLI applications"
+homepage = "https://github.com/keagud/getchoice"
 authors = ["Keaton Guderian <keagud@protonmail.com>"]
 readme = "README.md"
 license =  "0BSD"
@@ -17,22 +17,22 @@ classifiers=[
     'Programming Language :: Python :: 3.11',
 ]
 packages = [
-    { include = "selector" },
-    { include = "tests", format = "sdist" },
+    { include ="getchoice" },
 ]
 
 [tool.poetry.dependencies]
 python = ">=3.8,<4"
+prompt-toolkit = "^3.0.38"
+getkey = "^0.6.5"
 
 [tool.poetry.group.dev.dependencies]
 coverage = "*"
 isort = "*"
 pyright = "*"
 ruff = "*"
-
+ipython = "^8.11.0"
 pre-commit = "*"
 black = "*"
-
 
 
 [tool.pyright]
