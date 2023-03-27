@@ -25,7 +25,10 @@ repos:
         entry: ruff
         language: system
         types: [python]
-        args: [--verbose, --fix, --exit-non-zero-on-fix]
+        args:  
+          - --verbose 
+          - --fix 
+          - --exit-non-zero-on-fix
  
     -   id: pyright 
         name: pyright

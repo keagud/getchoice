@@ -39,6 +39,10 @@ black = "*"
 venvPath = "."
 venv = ".venv"
 
+
+[tool.ruff.per-file-ignores]
+"__init__.py" = ["F401"]
+
 [build-system]
 requires = ["poetry>=0.12"]
 build-backend = "poetry.masonry.api"
