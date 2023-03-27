@@ -5,6 +5,7 @@ A simple library to allow a user to select from a list of options on the command
 - `getchoice` is intended for use alongside [python prompt toolkit](https://github.com/prompt-toolkit/python-prompt-toolkit); its output can be styled using PPT-style `(styling, text)` format.
 - `getchoice` does not use `curses`, and does not clear the screen when used.
 
+Install it from PyPI: `pip install getchoice`
 
 ```python 
 from getchoice import ChoicePrinter
