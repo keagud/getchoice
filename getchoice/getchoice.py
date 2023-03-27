@@ -20,10 +20,10 @@ T = TypeVar("T")
 class ChoicePrinter:
     def __init__(
         self,
-        normal_style: str,
-        selected_style: str,
-        title_style: str,
-        pointer: str,
+        normal_style: str = "skyblue",
+        selected_style: str = "red bold",
+        title_style: str = "skyblue bold underline",
+        pointer: str = "*",
         show_numbers: bool = False,
     ) -> None:
         self.normal_style = normal_style
@@ -83,9 +83,9 @@ class ChoicePrinter:
 
     def getchoice(
         self,
-        options: list[tuple[str, T]],
+        options: list[tuple[str, T | str]],
         title: Optional[str] = None,
-    ) -> tuple[int, T]:
+    ) -> tuple[int, T | str]:
         selected: int = 0
         self.hide_cursor()
 
