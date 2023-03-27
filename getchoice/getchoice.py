@@ -83,9 +83,9 @@ class ChoicePrinter:
 
     def getchoice(
         self,
-        options: list[tuple[str, T | str]],
+        options: list[tuple[str, T]],
         title: Optional[str] = None,
-    ) -> tuple[int, T | str]:
+    ) -> tuple[int, T]:
         selected: int = 0
         self.hide_cursor()
 

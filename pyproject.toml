@@ -1,7 +1,7 @@
 [tool]
 [tool.poetry]
 name = "getchoice"
-version = "1.0.0"
+version = "1.0.1"
 description = "Simple, extensible user selection interface for CLI applications"
 homepage = "https://github.com/keagud/getchoice"
 authors = ["Keaton Guderian <keagud@protonmail.com>"]
