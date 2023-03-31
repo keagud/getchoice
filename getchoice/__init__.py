@@ -2,4 +2,4 @@
 __author__ = """Keaton Guderian"""
 __email__ = "keagud@protonmail.com"
 
-from .getchoice import ChoicePrinter
+from .getchoice import ChoicePrinter, make_choice_style
